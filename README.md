@@ -22,7 +22,7 @@ pod 'M3u8DownLoadManger'
 
 ## Author
 
-DuoLa, hari@gitlab.com
+wusa, '1241545546@qq.com'
 
 ## License
 

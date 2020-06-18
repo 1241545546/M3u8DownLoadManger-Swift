@@ -54,7 +54,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## M3u8DownLoadManger
 
-Copyright (c) 2020 DuoLa <hari@gitlab.com>
+Copyright (c) 2020 Wusa <1241545546@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
