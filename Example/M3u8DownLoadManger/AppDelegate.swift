@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        M3u8DownLoad.manger.downLoadProTs(url: "model.m3u8Url")
+        M3u8DownLoad.manger.downLoadProTs(url: "http://vcache.city84.com/video/c110477/audio/6a9b7675f34e4c0d86acaae70c1befba.m3u8")
         return true
     }
 

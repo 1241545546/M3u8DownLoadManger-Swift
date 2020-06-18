@@ -10,9 +10,9 @@ import UIKit
 import AFNetworking
 
 ///下载提供预下载和全部缓存两个接口 预下载就下载m3u8 和第一个 ts 下载需要取消正在下载的任务执行下载最新的任务 
-class M3u8DownLoad: NSObject {
+public class M3u8DownLoad: NSObject {
     
-    static let manger : M3u8DownLoad = M3u8DownLoad()
+    public static let manger : M3u8DownLoad = M3u8DownLoad()
         
     lazy var taskList: NSMutableDictionary = {
         var task = NSMutableDictionary()
@@ -37,7 +37,7 @@ class M3u8DownLoad: NSObject {
     
     ///预下载
     /// - Parameter url: m3u8 的url
-    func downLoadProTs(url:String) -> Void {
+    public func downLoadProTs(url:String) -> Void {
         
         let fileMd5 = url.md5
         let filePath = "\(NSHomeDirectory())/Documents/M3U8File/\(fileMd5)/\(fileMd5).m3u8"
@@ -103,7 +103,7 @@ class M3u8DownLoad: NSObject {
         let task = session.downloadTask(with: URLRequest(url: URL(string: srcurl)!), progress: { (progress) in
             debugPrint("progress\(progress)")
         }, destination: { (url, response) -> URL in
-            return URL(fileURLWithPath: "\(NSHomeDirectory())/Documents/M3U8File/\(srcurl.md5)/\(srcurl.md5)).m3u8")
+            return URL(fileURLWithPath: "\(NSHomeDirectory())/Documents/M3U8File/\(srcurl.md5)/\(srcurl.md5).m3u8")
         }) { (response, url, error) in
             handle(error,response)
         }
@@ -112,7 +112,7 @@ class M3u8DownLoad: NSObject {
         
     }
     
-    func canthelAllTask() -> Void {
+    public func canthelAllTask() -> Void {
         for item in taskList.allKeys {
             let key = item as! String
             let task = taskList.object(forKey: key) as! URLSessionTask

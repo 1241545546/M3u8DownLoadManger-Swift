@@ -20,7 +20,7 @@ class M3u8Cache: NSObject {
     static let server = GCDWebServer()
     
     /// 开启本地服务 端口号默认 8979 如需改变请修改代码
-    class func startListenService() -> Void {
+    public class func startListenService() -> Void {
         
         server.addDefaultHandler(forMethod: "GET", request: GCDWebServerRequest.self, processBlock: {request in
             
@@ -72,7 +72,7 @@ class M3u8Cache: NSObject {
     
     /// 本地 代理  默认端口号8978 如有冲突请修改使用 记得开启服务器
     /// - Parameter url: 原始url
-    class func proxyLocal(url:String) -> URL {
+    public class func proxyLocal(url:String) -> URL {
         let string = NSString(string: url)
         self.cacheTsUrl(value: url, key: url)
         return URL(string: "http://localhost:8978/\(url.md5)/\(url.md5).\(string.pathExtension)")!

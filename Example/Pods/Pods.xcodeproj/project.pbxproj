@@ -1671,7 +1671,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2B5E8C9F51F7A9D414F204A951824758 /* Release */ = {
+		3185E640049C00088FAFA6DD14A20D93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 502EF3CF3E46D1C65E3B28F23777417B /* M3u8DownLoadManger.xcconfig */;
 			buildSettings = {
@@ -1695,7 +1695,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1831,7 +1831,7 @@
 			};
 			name = Release;
 		};
-		5D6B07151543745E84DBDEB48EC9AC00 /* Debug */ = {
+		51D566B2BD087E7E37D120CDA27968B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 502EF3CF3E46D1C65E3B28F23777417B /* M3u8DownLoadManger.xcconfig */;
 			buildSettings = {
@@ -1855,7 +1855,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2369,8 +2369,8 @@
 		B2DD7719E4A896BB9A7B1953F6FA0D12 /* Build configuration list for PBXNativeTarget "M3u8DownLoadManger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D6B07151543745E84DBDEB48EC9AC00 /* Debug */,
-				2B5E8C9F51F7A9D414F204A951824758 /* Release */,
+				51D566B2BD087E7E37D120CDA27968B1 /* Debug */,
+				3185E640049C00088FAFA6DD14A20D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

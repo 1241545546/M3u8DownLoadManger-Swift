@@ -29,7 +29,7 @@ TODO: 通过预下载 ts 到本地,播放器播放本地第一段优化切换播
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
+  s.swift_version = '4.2'
   s.source_files = 'M3u8DownLoadManger/Classes/**/*'
   
   # s.resource_bundles = {
