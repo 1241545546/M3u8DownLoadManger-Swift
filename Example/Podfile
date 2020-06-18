@@ -2,7 +2,10 @@ use_frameworks!
 
 target 'M3u8DownLoadManger_Example' do
   pod 'M3u8DownLoadManger', :path => '../'
-
+  #视屏播放
+  pod 'ZFPlayer'
+  pod 'ZFPlayer/ControlView'
+  pod 'ZFPlayer/AVPlayer'
   target 'M3u8DownLoadManger_Tests' do
     inherit! :search_paths
 

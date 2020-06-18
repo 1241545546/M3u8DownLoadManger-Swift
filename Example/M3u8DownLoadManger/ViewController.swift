@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+//    M3u8DownLoad.manger.downLoadProTs("http://vcache.city84.com/video/c003596/audio/4d2fbe6229df4795accbae3bdc32225c.m3u8")
 
     override func viewDidLoad() {
         super.viewDidLoad()

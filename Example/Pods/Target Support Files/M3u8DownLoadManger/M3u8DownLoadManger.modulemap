@@ -1,0 +1,6 @@
+framework module M3u8DownLoadManger {
+  umbrella header "M3u8DownLoadManger-umbrella.h"
+
+  export *
+  module * { export * }
+}

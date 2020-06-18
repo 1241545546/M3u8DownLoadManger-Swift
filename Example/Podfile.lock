@@ -1,0 +1,67 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - GCDWebServer/Core (3.5.3)
+  - GCDWebServer/WebDAV (3.5.3):
+    - GCDWebServer/Core
+  - M3u8DownLoadManger (0.0.1):
+    - AFNetworking
+    - GCDWebServer/WebDAV (~> 3.0)
+    - YYCache
+  - YYCache (1.0.4)
+  - ZFPlayer (3.2.16):
+    - ZFPlayer/Core (= 3.2.16)
+  - ZFPlayer/AVPlayer (3.2.16):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (3.2.16):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (3.2.16)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - M3u8DownLoadManger (from `../`)
+  - ZFPlayer
+  - ZFPlayer/AVPlayer
+  - ZFPlayer/ControlView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - FBSnapshotTestCase
+    - GCDWebServer
+    - YYCache
+    - ZFPlayer
+
+EXTERNAL SOURCES:
+  M3u8DownLoadManger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GCDWebServer: c0ab22c73e1b84f358d1e2f74bf6afd1c60829f2
+  M3u8DownLoadManger: a7aae94bdbab5cb1396b1d62b202478978359b93
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  ZFPlayer: fbae8477ec9a83f644bd8890e92e7871f37a587d
+
+PODFILE CHECKSUM: 3fbc2b53b5666c872b42100f473f33078ce9be21
+
+COCOAPODS: 1.6.1

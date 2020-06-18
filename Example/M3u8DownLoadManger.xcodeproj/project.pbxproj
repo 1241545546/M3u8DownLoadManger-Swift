@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0AA773037038011B70DDA242 /* Pods-M3u8DownLoadManger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M3u8DownLoadManger_Tests.release.xcconfig"; path = "Target Support Files/Pods-M3u8DownLoadManger_Tests/Pods-M3u8DownLoadManger_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		40D13C30272319B317C7D4B5 /* M3u8DownLoadManger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = M3u8DownLoadManger.podspec; path = ../M3u8DownLoadManger.podspec; sourceTree = "<group>"; };
-		5014A43D4C05F3DCB090A9AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		40D13C30272319B317C7D4B5 /* M3u8DownLoadManger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = M3u8DownLoadManger.podspec; path = ../M3u8DownLoadManger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5014A43D4C05F3DCB090A9AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* M3u8DownLoadManger_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M3u8DownLoadManger_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		607FACE51AFB9204008FA782 /* M3u8DownLoadManger_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M3u8DownLoadManger_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		72B30EA5E5B083DBAD9810A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		72B30EA5E5B083DBAD9810A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		75A4648701C5E48CE4ADE6BA /* Pods-M3u8DownLoadManger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M3u8DownLoadManger_Example.release.xcconfig"; path = "Target Support Files/Pods-M3u8DownLoadManger_Example/Pods-M3u8DownLoadManger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		96DB40CB419C2CA6B7620716 /* Pods_M3u8DownLoadManger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M3u8DownLoadManger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB75913B410FD73194B997CC /* Pods_M3u8DownLoadManger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M3u8DownLoadManger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +147,6 @@
 				CD5A3A79E6ECF0DD7D587801 /* Pods-M3u8DownLoadManger_Tests.debug.xcconfig */,
 				0AA773037038011B70DDA242 /* Pods-M3u8DownLoadManger_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +171,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				1537E6392341C37412769305 /* [CP] Embed Pods Frameworks */,
+				9760B7AC6B03F76F8E3858DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,10 +214,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = W8VZRULKN3;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = W8VZRULKN3;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +230,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -272,13 +275,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-M3u8DownLoadManger_Example/Pods-M3u8DownLoadManger_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 				"${BUILT_PRODUCTS_DIR}/M3u8DownLoadManger/M3u8DownLoadManger.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M3u8DownLoadManger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -305,6 +314,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-M3u8DownLoadManger_Tests/Pods-M3u8DownLoadManger_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9760B7AC6B03F76F8E3858DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-M3u8DownLoadManger_Example/Pods-M3u8DownLoadManger_Example-resources.sh",
+				"${PODS_ROOT}/ZFPlayer/ZFPlayer/Classes/ControlView/ZFPlayer.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFPlayer.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-M3u8DownLoadManger_Example/Pods-M3u8DownLoadManger_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9BBAFC58DDFCDD1BD11A5E76 /* [CP] Check Pods Manifest.lock */ = {
@@ -505,6 +536,7 @@
 			baseConfigurationReference = C50735D44EFB2126B24172BC /* Pods-M3u8DownLoadManger_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W8VZRULKN3;
 				INFOPLIST_FILE = M3u8DownLoadManger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -520,6 +552,7 @@
 			baseConfigurationReference = 75A4648701C5E48CE4ADE6BA /* Pods-M3u8DownLoadManger_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W8VZRULKN3;
 				INFOPLIST_FILE = M3u8DownLoadManger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -534,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD5A3A79E6ECF0DD7D587801 /* Pods-M3u8DownLoadManger_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = W8VZRULKN3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -556,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0AA773037038011B70DDA242 /* Pods-M3u8DownLoadManger_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = W8VZRULKN3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
