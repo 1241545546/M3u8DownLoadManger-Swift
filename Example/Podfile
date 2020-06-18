@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'M3u8DownLoadManger_Example' do
+  pod 'M3u8DownLoadManger', :path => '../'
+
+  target 'M3u8DownLoadManger_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
