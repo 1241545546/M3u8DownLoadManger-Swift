@@ -24,7 +24,7 @@ TODO: 通过预下载 ts 到本地,播放器播放本地第一段优化切换播
   s.homepage         = 'https://github.com/1241545546/M3u8DownLoadManger-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'wusa' => '1241545546@qq.com' }
+  s.author           = { '1241545546' => '1241545546@qq.com' }
   s.source           = { :git => 'https://github.com/1241545546/M3u8DownLoadManger-Swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
