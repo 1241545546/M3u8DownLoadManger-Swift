@@ -18,7 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //1.启动服务器
+        M3u8Cache.startListenService()
+        //2. 预下载
         M3u8DownLoad.manger.downLoadProTs(url: "http://vcache.city84.com/video/c110477/audio/6a9b7675f34e4c0d86acaae70c1befba.m3u8")
+        //3.映射后的播放地址 丢给播放器播放
+        M3u8Cache.proxyLocal(url: "http://vcache.city84.com/video/c110477/audio/6a9b7675f34e4c0d86acaae70c1befba.m3u8")
+        
+        //播放播放切换
+        
         return true
     }
 

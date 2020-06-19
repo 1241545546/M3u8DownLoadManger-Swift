@@ -13,7 +13,7 @@ import CommonCrypto
 
 import GCDWebServer
 ///提供缓存管理数据(下载了多少片段)  提供i前台代理 UrL 缓存原始地址以便映射播放后续片段
-class M3u8Cache: NSObject {
+public class M3u8Cache: NSObject {
     
     static let cacheManger = YYCache.init(name: "M3u8CacheStateManger")
     
