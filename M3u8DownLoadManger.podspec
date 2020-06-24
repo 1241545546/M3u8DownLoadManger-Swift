@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'M3u8DownLoadManger'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = '通过缓存预下载m3u8首段 ts,达到抖音级别滑动视频切换流畅度'
 
 # This description is used to generate tags and improve search results.

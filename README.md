@@ -9,13 +9,13 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-//1.启动服务器
+1.启动服务器
 M3u8Cache.startListenService()
-//2. 预下载
+2. 预下载
 M3u8DownLoad.manger.downLoadProTs(url: "http://vcache.city84.com/video/c110477/audio/6a9b7675f34e4c0d86acaae70c1befba.m3u8")
-//3.映射后的播放地址 丢给播放器播放
+3.映射后的播放地址 丢给播放器播放
 let lurl = M3u8Cache.proxyLocal(url: "http://vcache.city84.com/video/c110477/audio/6a9b7675f34e4c0d86acaae70c1befba.m3u8")
-//播放器播放
+播放器播放
 play(lurl)
 ## Requirements
 

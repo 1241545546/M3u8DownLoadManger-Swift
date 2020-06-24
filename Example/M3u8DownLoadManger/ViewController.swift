@@ -16,12 +16,12 @@ class ViewController: UIViewController {
     
     lazy var player: ZFPlayerController = {
         var playerss = ZFPlayerController.init(playerManager: ZFAVPlayerManager.init(), containerView: view)
-        playerss.assetURL = M3u8Cache.proxyLocal(url: "http://vcache.city84.com/video/c003596/audio/4d2fbe6229df4795accbae3bdc32225c.m3u8")
+        playerss.assetURL = M3u8Cache.proxyLocal(url: "http://vcache.city84.com/video/c057926/audio/38f697e3d269419f94aef77698f70a96.m3u8")
         return playerss
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        M3u8DownLoad.manger.downLoadProTs(url: "http://vcache.city84.com/video/c003596/audio/4d2fbe6229df4795accbae3bdc32225c.m3u8")
+        M3u8DownLoad.manger.downLoadProTs(url: "http://vcache.city84.com/video/c057926/audio/38f697e3d269419f94aef77698f70a96.m3u8")
         
         // Do any additional setup after loading the view, typically from a nib.
         player.playTheIndex(0)

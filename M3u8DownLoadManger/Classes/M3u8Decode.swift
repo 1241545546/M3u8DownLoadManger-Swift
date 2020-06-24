@@ -33,6 +33,8 @@ class M3u8Decode: NSObject {
         }
     }
     
+    /// 解码主机服务器地址
+    /// - Parameter url:  Url
     class func decodeHost(url:String) -> String {
         
         var result = url.split(separator: "/")

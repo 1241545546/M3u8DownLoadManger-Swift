@@ -72,8 +72,11 @@ public class M3u8DownLoad: NSObject {
             }
         }
     }
-    
+    ///下载某一片段
     func downLoadTs(url:String,dir:String,tsname:String,isall:Bool? = false) -> Void {
+        if url.isEmpty || url == "" || !url.hasPrefix("http") {
+            return
+        }
         weak var weakSelf = self
         //遍历当前任务 查看是否在任务中
         let keys : [String] = taskList.allKeys as! [String]
@@ -97,8 +100,11 @@ public class M3u8DownLoad: NSObject {
         taskList.setObject(task, forKey: NSString(string: url.md5))
         task.resume()
     }
-    
+    ///下载m3u8 文件
     func downLoadM3u8(srcurl:String,handle:@escaping (_ error : Error?,_ response : Any?) -> Void) -> Void {
+        if srcurl.isEmpty || srcurl == "" || !srcurl.hasPrefix("http") {
+            return
+        }
         //m3u8 下载好之后需要拷贝一份
         let task = session.downloadTask(with: URLRequest(url: URL(string: srcurl)!), progress: { (progress) in
             debugPrint("progress\(progress)")
